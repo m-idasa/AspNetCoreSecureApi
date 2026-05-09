@@ -1,0 +1,15 @@
+﻿@model IEnumerable<AspNetCoreSecureApi.Models.BillDto>
+
+@{
+    ViewBag.Title = "Bills";
+}
+
+@foreach (var item in Model)
+{
+    <div>
+        @item.FactorId
+        <hr />
+        @item.TotalCost
+        <hr />
+    </div>
+}
